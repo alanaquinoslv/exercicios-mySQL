@@ -1,0 +1,9 @@
+*.sql linguist-detectable=true
+
+# If you want that .sql files being detected by GitHub, you should create a file called .gitattributes, and then you add this:
+
+# *.sql linguist-detectable=true
+
+# In some cases GitHub shows it like TSQL, but if that happens you can add this line, so GitHub shows it like SQL:
+
+# *.sql linguist-language=sql

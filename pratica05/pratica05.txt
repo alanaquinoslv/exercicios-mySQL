@@ -1,0 +1,141 @@
+1. Fazer a modelagem lógica (DER) de um sistema para um pet shop cadastrar 
+os pets e seus donos (clientes).
+- Cada pet pertence somente a um cliente.
+- Cada cliente pode ter mais de um pet cadastrado.
+- Sobre cada pet, o sistema guarda um identificador que é inicializado com 101 e 
+incrementado de forma automática. Esse identificador é a chave primária que 
+identifica um pet de forma única. Além do identificador, o sistema guarda o tipo do 
+animal (se é cachorro, gato, etc), o nome, a raça e a data de nascimento do pet.
+- Sobre cada cliente, o sistema guarda também um identificador que identifica de 
+forma única cada cliente. Esse identificador começa a partir de 1 e é incrementado 
+de forma automática pelo sistema. Além do código, o sistema guarda o nome, o 
+telefone fixo, o telefone celular e o endereço de cada cliente.
+Criar um banco de dados Pet no MySQL, selecionar esse banco de dados e 
+executar as instruções relacionadas a seguir.
+- Criar as tabelas equivalentes à modelagem. 
+- Inserir dados nas tabelas, de forma que exista mais de um tipo de animal diferente, 
+e que exista algum cliente com mais de um pet cadastrado. Procure inserir pelo 
+menos 2 clientes diferentes que tenham o mesmo sobrenome.
+- Exibir todos os dados de cada tabela criada, separadamente.
+- Fazer os acertos da chave estrangeira, caso não tenha feito no momento da 
+criação.
+- Altere o tamanho da coluna nome do cliente.
+- Exibir os dados de todos os pets que são de um determinado tipo (por exemplo: 
+cachorro).
+- Exibir apenas os nomes e as datas de nascimento dos pets.
+- Exibir os dados dos pets ordenados em ordem crescente pelo nome.
+- Exibir os dados dos clientes ordenados em ordem decrescente pelo bairro.
+- Exibir os dados dos pets cujo nome comece com uma determinada letra.
+- Exibir os dados dos clientes que têm o mesmo sobrenome.
+- Alterar o telefone de um determinado cliente.
+- Exibir os dados dos clientes para verificar se alterou.
+- Exibir os dados dos pets e dos seus respectivos donos.
+- Exibir os dados dos pets e dos seus respectivos donos, mas somente de um 
+determinado cliente.
+- Excluir algum pet.
+- Exibir os dados dos pets para verificar se excluiu.
+- Excluir as tabelas.
+2. Fazer a modelagem lógica (DER) de um sistema para armazenar os gastos 
+individuais das pessoas de sua família.
+Crie uma entidade Pessoa, com atributos idPessoa, nome, data de nascimento, 
+profissão.
+Crie uma outra entidade Gasto, com atributos idGasto, data, valor, descrição.
+Depois de desenhado o DER, implemente no MySQL as tabelas equivalentes ao 
+modelo que você criou e:
+• Insira dados nas tabelas.
+• Exiba os dados de cada tabela individualmente.
+• Exiba somente os dados de cada tabela, mas filtrando por algum dado da 
+tabela (por exemplo, as pessoas de alguma profissão, etc).
+• Exiba os dados das pessoas e dos seus gastos correspondentes.
+• Exiba os dados de uma determinada pessoa e dos seus gastos 
+correspondentes.
+• Atualize valores já inseridos na tabela.
+• Exclua um ou mais registros de alguma tabela.
+3. Fazer a modelagem lógica no MySQL Workbench de um sistema para cadastrar 
+os setores de uma empresa, os funcionários desses setores e os acompanhantes 
+desses funcionários para uma festa que a empresa está organizando para celebrar 
+o fim da pandemia.
+- Cada setor pode ter mais de um funcionário.
+- Cada funcionário trabalha apenas em um setor.
+- Sobre cada setor, o sistema guarda um número que identifica de forma única cada 
+setor. Além desse identificador, o sistema guarda o nome do setor e o número do 
+andar do prédio em que fica o setor.
+- Sobre cada funcionário, o sistema guarda um identificador que é a chave primária 
+que identifica um funcionário de forma única. Além do identificador, o sistema 
+guarda o nome do funcionário, seu telefone e seu salário (que deve ser maior do 
+que zero, ou seja, o sistema não pode aceitar valores negativos ou iguais a zero.
+- A empresa está organizando uma festa para celebrar o final da pandemia de Covid. 
+Nessa festa, cada funcionário poderá trazer zero ou mais acompanhantes. Cada 
+acompanhante só poderá estar relacionado a um funcionário.
+- Sobre cada acompanhante, o sistema guarda um identificador que forma uma 
+chave primária composta, juntamente com a identificação do funcionário que o 
+convidou para a festa. Além disso, o sistema guarda o nome, o tipo de relação que 
+o acompanhante tem com o funcionário e a data de nascimento do acompanhante.
+Escrever os comandos do MySQL para: 
+- Criar um banco de dados chamado PraticaFuncionario.
+- Selecionar esse banco de dados.
+- Criar as tabelas correspondentes à sua modelagem.
+- Inserir dados nas tabelas, de forma que exista mais de um funcionário em cada 
+setor cadastrado.
+- Exibir todos os dados de cada tabela criada, separadamente.
+- Fazer os acertos da chave estrangeira, caso não tenha feito no momento da 
+criação.
+- Exibir os dados dos setores e dos seus respectivos funcionários.
+- Exibir os dados de um determinado setor (informar o nome do setor na 
+consulta) e dos seus respectivos funcionários.
+- Exibir os dados dos funcionários e de seus acompanhantes.
+- Exibir os dados de apenas um funcionário (informar o nome do funcionário) e 
+os dados de seus acompanhantes.
+- Exibir os dados dos funcionários, dos setores em que trabalham e dos seus 
+acompanhantes.
+4. Fazer a modelagem lógica de um sistema para cadastrar os treinadores de 
+nadadores, que participarão de vários campeonatos, representando o Brasil.
+- Cada treinador treina mais de um nadador.
+- Cada nadador tem apenas um treinador.
+- Sobre cada nadador, o sistema guarda um identificador, que identifica de forma 
+única cada um deles. Esse identificador começa com o valor 100 e é inserido de 
+forma automática. Além desse identificador, o sistema guarda o nome, o estado de 
+origem e a data de nascimento do nadador.
+- Sobre cada treinador, o sistema guarda um identificador, que identifica de forma 
+única cada treinador. Esse identificador começa com o valor 10 e é inserido de forma 
+automática. O sistema também guarda o nome do treinador, o telefone (apenas um 
+número de telefone) e o e-mail do treinador.
+- Um treinador mais experiente orienta outros treinadores novatos. Cada treinador 
+novato é orientado apenas por um treinador.
+Escrever os comandos do MySQL para:
+a) Criar um banco de dados chamado Treinador.
+b) Selecionar esse banco de dados.
+c) Criar as tabelas correspondentes à sua modelagem.
+d) Inserir dados nas tabelas, de forma que exista mais de um nadador para algum 
+treinador, e mais de um treinador sendo orientado por algum treinador mais 
+experiente.
+e) Exibir todos os dados de cada tabela criada, separadamente.
+f) Fazer os acertos da chave estrangeira, caso não tenha feito no momento da criação 
+das tabelas.
+g) Exibir os dados dos treinadores e os dados de seus respectivos nadadores.
+h) Exibir os dados de um determinado treinador (informar o nome do treinador na 
+consulta) e os dados de seus respectivos nadadores.
+i) Exibir os dados dos treinadores e os dados dos respectivos treinadores 
+orientadores.
+j) Exibir os dados dos treinadores e os dados dos respectivos treinadores
+orientadores, porém somente de um determinado treinador orientador (informar o 
+nome do treinador na consulta).
+l) Exibir os dados dos treinadores, os dados dos respectivos nadadores e os dados 
+dos respectivos treinadores orientadores.
+m) Exibir os dados de um treinador (informar o seu nome na consulta), os dados dos 
+respectivos nadadores e os dados do seu treinador orientador.
+5. [DESAFIO] Fazer a modelagem lógica (DER) de um sistema para UMA clínica 
+médica. Supor que a clínica tem vários médicos e vários pacientes, sendo que cada 
+paciente pode ser atendido por mais de um médico da clínica. E cada médico, 
+obviamente, pode atender mais de um paciente. 
+Sobre o paciente, o sistema guarda um identificador, o nome, o número do telefone 
+(que pode ser mais de um) e o endereço. 
+Sobre o médico, o sistema guarda o número de CRM (Conselho Regional de 
+Medicina), que é usado como identificador do médico, o nome do médico, a 
+especialidade do médico (que pode ser mais de uma) e o número de telefone do 
+médico (que pode ser mais de um).
+É importante também guardar a informação da data e horário de cada consulta 
+realizada. 
+Atenção: Não precisa ter a entidade clinica, porque não vamos armazenar dados 
+de várias clínicas, apenas de uma!
+Não precisa implementar no MySQL.
